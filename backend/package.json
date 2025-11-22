@@ -1,0 +1,34 @@
+{
+  "name": "lemanflow-backend",
+  "version": "1.0.0",
+  "description": "Backend Fastify pour LémanFlow - QR signing, zkLogin, sponsored transactions",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "sui",
+    "blockchain",
+    "fastify",
+    "zklogin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@mysten/sui.js": "^0.50.0",
+    "@mysten/zklogin": "^0.3.0",
+    "fastify": "^4.24.3",
+    "@fastify/cors": "^8.4.0",
+    "@fastify/env": "^4.2.0",
+    "ed25519": "^2.0.0",
+    "qrcode": "^1.5.3",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}
+
