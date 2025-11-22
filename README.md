@@ -129,4 +129,4 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ---
 
-**Note**: Ce projet est en développement actif. Les fonctionnalités peuvent changer.
+**Note**: Ce projet est en développement actif. Les fonctionnalités peuvent changer. gg
