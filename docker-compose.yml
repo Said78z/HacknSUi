@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    environment:
+      - VITE_SUI_NETWORK=testnet
+      - VITE_PACKAGE_ID=${VITE_PACKAGE_ID}
+      - VITE_APP_OBJECT_ID=${VITE_APP_OBJECT_ID}
+    restart: unless-stopped
+    networks:
+      - sui-network
+
+networks:
+  sui-network:
+    driver: bridge
